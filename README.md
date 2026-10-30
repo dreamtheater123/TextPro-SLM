@@ -13,6 +13,10 @@
 
 </div>
 
+## News
+
+- 🎉 Our paper has been accepted to **NeurIPS 2026**!
+
 TextPro-SLM makes spoken input closer to what a text LLM already understands. **WhisperPro** produces a transcript and synchronized prosody features. The LLM receives the transcript as ordinary text tokens, alongside compact embeddings that retain information about how the words were spoken.
 
 **Strong semantics, richer prosody, limited adaptation data.** The paper reports the lowest average semantic modality gap among the compared SLMs at both 3B and 7B scales, with competitive paralinguistic understanding. LLM adaptation uses roughly **1,000 hours of audio**; this figure excludes pretraining of the underlying Whisper and Qwen backbones.
