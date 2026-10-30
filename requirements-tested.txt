@@ -1,0 +1,13 @@
+# Reproducibility constraints for the 2026-10-30 CUDA validation.
+# Install the matching PyTorch/torchaudio build for your CUDA runtime first.
+# Example: python -m pip install -e '.[long-audio,test]' -c requirements-tested.txt
+torch==2.8.0
+torchaudio==2.8.0
+transformers==4.49.0
+huggingface-hub==0.36.2
+safetensors==0.4.4
+numpy==1.26.3
+librosa==0.11.0
+soundfile==0.14.0
+silero-vad==6.2.1
+pytest==8.4.2

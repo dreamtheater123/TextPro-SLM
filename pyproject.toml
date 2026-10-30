@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "textpro-slm"
+version = "0.1.0"
+description = "Speech understanding through transcript tokens and compact prosody"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "Wenqian Cui and collaborators"}]
+dependencies = [
+  "torch>=2.5,<2.9",
+  "transformers==4.49.0",
+  "huggingface-hub>=0.36,<1",
+  "safetensors>=0.4.3,<1",
+  "numpy>=1.26,<3",
+  "librosa>=0.10.2,<0.12",
+  "soundfile>=0.12,<1",
+]
+
+[project.optional-dependencies]
+long-audio = ["silero-vad==6.2.1", "torchaudio>=2.5,<2.9"]
+test = ["pytest>=8,<9"]
+
+[project.scripts]
+textpro-slm = "textpro_slm.cli:main"
+whisperpro = "textpro_slm.cli:encode_main"
+
+[project.urls]
+Repository = "https://github.com/dreamtheater123/TextPro-SLM"
+Paper = "https://openreview.net/forum?id=Jsjmo8eX29"
+
+[tool.setuptools.packages.find]
+include = ["textpro_slm*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

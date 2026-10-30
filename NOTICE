@@ -1,0 +1,18 @@
+TextPro-SLM
+Copyright 2026 Wenqian Cui and collaborators.
+
+Built with Qwen.
+This repository provides inference adaptations of the authors' TextPro-SLM and
+WhisperPro implementations. WhisperPro uses Hugging Face Transformers' Whisper
+implementation and weights derived from OpenAI Whisper large-v3.
+
+Upstream dependencies retain their respective licenses:
+- OpenAI Whisper: MIT, Copyright 2022 OpenAI.
+- Hugging Face Transformers: Apache-2.0.
+- Qwen2.5-7B-Instruct: Apache-2.0.
+- Qwen2.5-3B-Instruct: Qwen Research License (checkpoint only).
+- Silero VAD: MIT, Copyright Silero Team.
+
+Model weights are distributed separately on Hugging Face. Consult each model's
+LICENSE and NOTICE/Notice for its terms. Repository code licensing does not
+supersede those checkpoint terms.
