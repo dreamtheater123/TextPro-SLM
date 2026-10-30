@@ -1,6 +1,6 @@
 <div align="center">
 
-# TextPro-SLM
+# TextPro-SLM (NeurIPS 2026)
 ### Your Speech LLM Can Be a Prosody-Aware Text LLM
 
 **Minimizing Modality Gap from the Input Side**
